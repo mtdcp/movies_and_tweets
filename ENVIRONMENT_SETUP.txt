@@ -6,7 +6,7 @@
 	3- tap 'npm build run' to build the project
 	4- tap 'npm start' to run the project
 
--> On the browser (before clicking the 'Obter Tweets' button at 'http://localhost:3000/tweets'):
+-> On the browser (before clicking on the 'Obter Tweets' button at 'http://localhost:3000/tweets'):
 	5- Go to 'https://cors-anywhere.herokuapp.com/corsdemo' and click on the 'Request temporary access to the demo server' button
 	- You will see the message 'You currently have temporary access to the demo server.'
 	(This way there will not be any CORS (Cross-origin resource sharing) issues/errors!!)
