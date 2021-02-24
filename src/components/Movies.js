@@ -26,12 +26,12 @@ export default class Movies extends Component {
             this.state.moviesArr.pop();
         }
 
-        axios.get('https://api.themoviedb.org/3/search/person?api_key=<your_apiKey>&query=' + document.getElementById("txtbusca").value).then(data => {   
+        axios.get('https://api.themoviedb.org/3/search/person?api_key=8c7aea14364488a985ce8dc78fc72a3e&query=' + document.getElementById("txtbusca").value).then(data => {   
             this.setState({ movies: data.data.results })
 
             this.state.movies.forEach(movie => {
                 movie.known_for.forEach(subMovie => {
-                    axios.get('http://www.omdbapi.com/?t=' + subMovie.title + '&apikey=<your_apiKey>').then(data => {   
+                    axios.get('http://www.omdbapi.com/?t=' + subMovie.title + '&apikey=59fd1dbe').then(data => {   
                         if(!this.state.moviesArr.includes(data.data)) {
                             this.state.moviesAux.push(data.data);
                         }
