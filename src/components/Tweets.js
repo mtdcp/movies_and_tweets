@@ -53,9 +53,8 @@ export default class Tweets extends Component {
         try {
             await axios.get('https://cors-anywhere.herokuapp.com/https://api.twitter.com/2/tweets/search/recent?query=Portugal', {
                 headers: {
-                    'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAAGgKMgEAAAAA0zAl7NpQTaBwChxf9ncpvdrKf1E%3DWkmqH06UgoLUPJSfiaKjMi3XEia7GqBC5rPmk915b4AWIhMB1N',
-                    "Content-Type": "application/json",
-                    'Access-Control-Allow-Origin': '*',
+                    'Authorization': 'Bearer <token>',
+                    "Content-Type": "application/json"
                   }
             }).then(data => {   
                 data.data.data.forEach(tweet => {
